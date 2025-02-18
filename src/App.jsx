@@ -25,8 +25,13 @@ const App = () => {
   }, [todos]);
   const addTodo = (title) => {
     const newTodo = { id: Date.now(), title, completed: false };
+    //console.log("Nouvelle liste des tâches :", todos);
     setTodos([...todos, newTodo]);
+   
   };
+  useEffect(() => {
+    console.log("Mise à jour des tâches :", todos);
+}, [todos]);
   const toggleComplete = (id) => {
     setTodos(todos.map(todo =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
