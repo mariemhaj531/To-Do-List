@@ -29,3 +29,15 @@
 .todo-item button:hover {
     background: #c0392b;
 }
+
+.todo-item .edit-button {
+    background-color: rgb(5, 253, 117);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .todo-item  .edit-button:hover {
+    background-color: rgb(5, 241, 64);
+  }

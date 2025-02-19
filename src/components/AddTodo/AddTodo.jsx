@@ -21,6 +21,7 @@ const AddTodo = ({ addTodo }) => {
    <button type='submit' className='add-todo-button'>
        Add {emojii}
        </button>
+       
   </form>
   );
 };
